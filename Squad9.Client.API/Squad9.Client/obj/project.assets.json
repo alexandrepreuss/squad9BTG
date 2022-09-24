@@ -14,9 +14,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Prosoft\\Source\\Repos\\alexandrepreuss\\squad9BTG\\Squad9.Client.API\\Squad9.Client\\Squad9.Client.csproj",
-      "projectName": "Squad9.Client",
-      "projectPath": "C:\\Users\\Prosoft\\Source\\Repos\\alexandrepreuss\\squad9BTG\\Squad9.Client.API\\Squad9.Client\\Squad9.Client.csproj",
+      "projectUniqueName": "C:\\Users\\Prosoft\\Source\\Repos\\alexandrepreuss\\squad9BTG\\Squad9.Client.API\\Squad9.Client\\Squad9.Client.Front.csproj",
+      "projectName": "Squad9.Client.Front",
+      "projectPath": "C:\\Users\\Prosoft\\Source\\Repos\\alexandrepreuss\\squad9BTG\\Squad9.Client.API\\Squad9.Client\\Squad9.Client.Front.csproj",
       "packagesPath": "C:\\Users\\Prosoft\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Prosoft\\Source\\Repos\\alexandrepreuss\\squad9BTG\\Squad9.Client.API\\Squad9.Client\\obj\\",
       "projectStyle": "PackageReference",

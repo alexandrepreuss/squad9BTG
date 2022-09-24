@@ -11,7 +11,7 @@ namespace Squad9.Client.API.Controllers
         public IClientAppService _clientAppService;
 
         [HttpGet(Name = "Pega Dividas")]
-        public IEnumerable<ClientEntities> Get(Guid client)
+        public ClientEntities Get(Guid client)
         {
             return _clientAppService.GetDividas(client);
         }

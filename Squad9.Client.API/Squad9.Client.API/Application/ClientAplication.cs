@@ -8,9 +8,9 @@ namespace Squad9.Client.API.Application
     {
         private IClientRepository _clientRepository;
         
-        public IEnumerable<ClientEntities> GetDividasById(Guid cliente)
+        public ClientEntities GetDividasById(Guid cliente)
         {
-            return _clientRepository.GetDividas(cliente);
+            return _clientRepository.GetClient(cliente);
         }
     }
 }

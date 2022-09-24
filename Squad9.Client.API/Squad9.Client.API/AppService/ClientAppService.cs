@@ -9,7 +9,7 @@ namespace Squad9.Client.API.AppService
     {
         private IClientAplication _dividaApplication;
         
-        public IEnumerable<ClientEntities> GetDividas(Guid dadosClient)
+        public ClientEntities GetDividas(Guid dadosClient)
         {
             return _dividaApplication.GetDividasById(dadosClient);
         }

@@ -4,6 +4,6 @@ namespace Squad9.Client.API.Application.Contracts
 {
     public interface IClientAplication
     {
-        IEnumerable<ClientEntities> GetDividasById(Guid cliente);
+        ClientEntities GetDividasById(Guid cliente);
     }
 }

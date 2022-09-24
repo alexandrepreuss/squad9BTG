@@ -1,11 +1,21 @@
+using Microsoft.EntityFrameworkCore;
+using Squad9.Client.API.Application;
+using Squad9.Client.API.Application.Contracts;
+using Squad9.Client.API.AppService;
+using Squad9.Client.API.AppService.Contracts;
+using Squad9.Client.API.Infra.Contracts;
+using Squad9.Client.API.Infra.Factories;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
 builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddSingleton<IClientAplication, ClientAplication>();
+builder.Services.AddSingleton<IClientAppService, ClientAppService>();
 
 var app = builder.Build();
 

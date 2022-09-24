@@ -1,16 +1,18 @@
-﻿using Squad9.Client.API.Infra.Contracts;
-using System.Data;
-using System.Data.SqlClient;
+﻿using Microsoft.EntityFrameworkCore;
+using Squad9.Client.API.Entities;
 
 namespace Squad9.Client.API.Infra.Factories
 {
-    public class DBConnectionFactory : IDBConnectionFactory
+    public class DBConnectionFactory : DbContext
     {
+        public DBConnectionFactory(DbContextOptions<DBConnectionFactory> options)
+            : base(options)
+        { }
 
-        public IDbConnection Create()
-        {
-            return new SqlConnection("Server=squad9db.cluster-cvpksv55zfzp.us-east-1.rds.amazonaws.com;User ID=admin;Password=squad9DB;Database=squad9db");
-        }
+        public DbSet<ClientEntities> Client { get; set; }
+        public DbSet<AcordoFinanceiraEntities> Acordos { get; set; }        
+        public DbSet<DadosDividasEntities> Dividas { get; set; }
 
     }
+
 }
