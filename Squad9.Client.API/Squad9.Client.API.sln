@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32319.34
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Squad9.Client.API", "Squad9.Client.API\Squad9.Client.API.csproj", "{AAEFC3F7-57D5-4DD9-ADD7-EA50F9F322EB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Squad9.Client", "Squad9.Client\Squad9.Client.csproj", "{258067A1-369D-4071-8A01-847D341A8FAD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AAEFC3F7-57D5-4DD9-ADD7-EA50F9F322EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AAEFC3F7-57D5-4DD9-ADD7-EA50F9F322EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AAEFC3F7-57D5-4DD9-ADD7-EA50F9F322EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AAEFC3F7-57D5-4DD9-ADD7-EA50F9F322EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{258067A1-369D-4071-8A01-847D341A8FAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{258067A1-369D-4071-8A01-847D341A8FAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{258067A1-369D-4071-8A01-847D341A8FAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{258067A1-369D-4071-8A01-847D341A8FAD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DDFDDE28-6D63-4848-9B6C-C10A487BEB97}
+	EndGlobalSection
+EndGlobal
