@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Prosoft\\Source\\Repos\\alexandrepreuss\\squad9BTG\\Squad9.Client.API\\Squad9.Client.API\\Squad9.Client.API.csproj": {}
+    "C:\\Users\\Prosoft\\source\\repos\\alexandrepreuss\\squad9BTG\\Squad9.Client.API\\Squad9.Client.API\\Squad9.Client.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Prosoft\\Source\\Repos\\alexandrepreuss\\squad9BTG\\Squad9.Client.API\\Squad9.Client.API\\Squad9.Client.API.csproj": {
+    "C:\\Users\\Prosoft\\source\\repos\\alexandrepreuss\\squad9BTG\\Squad9.Client.API\\Squad9.Client.API\\Squad9.Client.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Prosoft\\Source\\Repos\\alexandrepreuss\\squad9BTG\\Squad9.Client.API\\Squad9.Client.API\\Squad9.Client.API.csproj",
+        "projectUniqueName": "C:\\Users\\Prosoft\\source\\repos\\alexandrepreuss\\squad9BTG\\Squad9.Client.API\\Squad9.Client.API\\Squad9.Client.API.csproj",
         "projectName": "Squad9.Client.API",
-        "projectPath": "C:\\Users\\Prosoft\\Source\\Repos\\alexandrepreuss\\squad9BTG\\Squad9.Client.API\\Squad9.Client.API\\Squad9.Client.API.csproj",
+        "projectPath": "C:\\Users\\Prosoft\\source\\repos\\alexandrepreuss\\squad9BTG\\Squad9.Client.API\\Squad9.Client.API\\Squad9.Client.API.csproj",
         "packagesPath": "C:\\Users\\Prosoft\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Prosoft\\Source\\Repos\\alexandrepreuss\\squad9BTG\\Squad9.Client.API\\Squad9.Client.API\\obj\\",
+        "outputPath": "C:\\Users\\Prosoft\\source\\repos\\alexandrepreuss\\squad9BTG\\Squad9.Client.API\\Squad9.Client.API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -51,9 +51,29 @@
               "target": "Package",
               "version": "[6.0.9, )"
             },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.9, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.2.3, )"
+            },
+            "Swashbuckle.AspNetCore.Swagger": {
+              "target": "Package",
+              "version": "[6.4.0, )"
+            },
+            "Swashbuckle.AspNetCore.SwaggerGen": {
+              "target": "Package",
+              "version": "[6.4.0, )"
+            },
+            "Swashbuckle.AspNetCore.SwaggerUI": {
+              "target": "Package",
+              "version": "[6.4.0, )"
+            },
+            "System.Configuration.ConfigurationManager": {
+              "target": "Package",
+              "version": "[6.0.1, )"
             },
             "System.Data.SqlClient": {
               "target": "Package",

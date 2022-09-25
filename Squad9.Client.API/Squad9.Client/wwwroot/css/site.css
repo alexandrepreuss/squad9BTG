@@ -16,3 +16,15 @@ html {
 body {
   margin-bottom: 60px;
 }
+#navLayout{
+    background-color: #b7b7b7;
+}
+
+#textoTopo{
+    margin-right: auto;
+
+}
+#menu{
+    margin-right: auto;
+}
+

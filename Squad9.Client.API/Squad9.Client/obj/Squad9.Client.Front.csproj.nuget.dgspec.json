@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Prosoft\\Source\\Repos\\alexandrepreuss\\squad9BTG\\Squad9.Client.API\\Squad9.Client\\Squad9.Client.Front.csproj": {}
+    "C:\\Users\\Prosoft\\source\\repos\\alexandrepreuss\\squad9BTG\\Squad9.Client.API\\Squad9.Client\\Squad9.Client.Front.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Prosoft\\Source\\Repos\\alexandrepreuss\\squad9BTG\\Squad9.Client.API\\Squad9.Client\\Squad9.Client.Front.csproj": {
+    "C:\\Users\\Prosoft\\source\\repos\\alexandrepreuss\\squad9BTG\\Squad9.Client.API\\Squad9.Client\\Squad9.Client.Front.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Prosoft\\Source\\Repos\\alexandrepreuss\\squad9BTG\\Squad9.Client.API\\Squad9.Client\\Squad9.Client.Front.csproj",
+        "projectUniqueName": "C:\\Users\\Prosoft\\source\\repos\\alexandrepreuss\\squad9BTG\\Squad9.Client.API\\Squad9.Client\\Squad9.Client.Front.csproj",
         "projectName": "Squad9.Client.Front",
-        "projectPath": "C:\\Users\\Prosoft\\Source\\Repos\\alexandrepreuss\\squad9BTG\\Squad9.Client.API\\Squad9.Client\\Squad9.Client.Front.csproj",
+        "projectPath": "C:\\Users\\Prosoft\\source\\repos\\alexandrepreuss\\squad9BTG\\Squad9.Client.API\\Squad9.Client\\Squad9.Client.Front.csproj",
         "packagesPath": "C:\\Users\\Prosoft\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Prosoft\\Source\\Repos\\alexandrepreuss\\squad9BTG\\Squad9.Client.API\\Squad9.Client\\obj\\",
+        "outputPath": "C:\\Users\\Prosoft\\source\\repos\\alexandrepreuss\\squad9BTG\\Squad9.Client.API\\Squad9.Client\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -46,6 +46,16 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[6.0.9, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.3.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

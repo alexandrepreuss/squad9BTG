@@ -14,7 +14,7 @@ namespace Squad9.Client.API.Controllers
 
         // GET: api/<DividasController>
         [HttpGet]
-        public List<DadosDividasEntities> Get()
+        public List<DadosDividasEntities> GetList()
         {
             return _dividaAppService.GetDividasList();
         }
@@ -26,7 +26,7 @@ namespace Squad9.Client.API.Controllers
             return _dividaAppService.GetDividaById(id);
         }
 
-        // POST api/<DividasController>
+        //POST api/<DividasController>
         [HttpPost]
         public Task<string> Post([FromBody] AcordoFinanceiraEntities acordo)
         {
@@ -35,9 +35,11 @@ namespace Squad9.Client.API.Controllers
         }
 
         // PUT api/<DividasController>/5
-        [HttpGet("{id}")]
-        public void Get(int id, [FromBody] string value)
+        [HttpPost("{id}")]
+        public Task<string> PostResposta([FromBody] AcordoFinanceiraEntities acordo)
         {
+            var result = _dividaAppService.CreateRespostaAcordo(acordo);
+            return result;
         }
     }
 }

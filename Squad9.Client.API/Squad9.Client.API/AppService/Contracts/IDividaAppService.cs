@@ -9,5 +9,7 @@ namespace Squad9.Client.API.AppService.Contracts
         DadosDividasEntities GetDividaById(int Id);
 
         Task<string> CreateAcordo(AcordoFinanceiraEntities acordo);
+
+        Task<string> CreateRespostaAcordo(AcordoFinanceiraEntities acordo);
     }
 }

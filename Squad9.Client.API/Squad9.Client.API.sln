@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Squad9.Client.API", "Squad9
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Squad9.Client.Front", "Squad9.Client\Squad9.Client.Front.csproj", "{258067A1-369D-4071-8A01-847D341A8FAD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Squad9.Entidade.API", "Squad9.Dividas\Squad9.Entidade.API.csproj", "{9FFE0B78-68D1-47D1-BF51-CCAC29E821AA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Squad9.Entidade.API", "Squad9.Dividas\Squad9.Entidade.API.csproj", "{9FFE0B78-68D1-47D1-BF51-CCAC29E821AA}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Front", "Front", "{52A18BFD-5B3B-43F4-B09F-9105383B54B6}"
 EndProject
