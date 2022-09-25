@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>@ViewData["Title"] - Squad9.Client</title>
+	<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+	<link rel="stylesheet" href="~/Squad9.Client.styles.css" asp-append-version="true" />
+</head>
+<body>
+	<header id="navLayout" class="mb-5">
+		<nav  class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light box-shadow mb-3">
+			<!-- Navigation -->
+			<div class="container">
+				<nav >
+					<a class="navbar-brand font-weight-bold" href="MeusAcordos.html">Repactua</a><br/>	
+				</nav>
+				
+			</div>
+		</nav>
+		<p id="textoTopo" class="mr-5">Porque o Repactua é diferente de tudo que você conhece</p>
+
+			<ul id="menu" class="nav nav-tabs float ml-5 mt-5">
+				<li class="nav-item mt-5">
+
+					</li>
+					<li class="nav-item">
+					<a class="nav-link text-dark" href="Index.html">Meus Acordos</a>
+					</li>
+					<li class="nav-item">
+					<a class="nav-link text-dark" href="Propostas.html">Propostas</a>
+					</li>
+			</ul>
+
+</header>
+	<div class="container">
+		<main role="main" class="pb-3">
+			@RenderBody()
+		</main>
+	</div>
+
+	<script src="~/lib/jquery/dist/jquery.min.js"></script>
+	<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="~/js/site.js" asp-append-version="true"></script>
+	@await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

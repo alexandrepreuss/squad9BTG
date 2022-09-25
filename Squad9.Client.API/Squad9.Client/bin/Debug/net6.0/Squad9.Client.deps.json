@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "Squad9.Client/1.0.0": {
+        "runtime": {
+          "Squad9.Client.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Squad9.Client/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -1,0 +1,30 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+#navLayout{
+    background-color: #b7b7b7;
+}
+
+#textoTopo{
+    margin-right: auto;
+
+}
+#menu{
+    margin-right: auto;
+}
+

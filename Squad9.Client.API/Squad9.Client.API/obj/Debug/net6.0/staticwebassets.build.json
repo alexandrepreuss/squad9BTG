@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "6ofQXowCxuZVE/mXoNjzwA89w0WokvlMcgP3uoMxXvc=",
+  "Source": "Squad9.Client.API",
+  "BasePath": "_content/Squad9.Client.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
