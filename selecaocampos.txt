@@ -1,0 +1,396 @@
+SELECT TOP (1000) [accountId] ** ja tem cpf, mas um ID de fato e sempre uma boa pratica
+      ,[customerId] *
+      ,[organizationId] **
+      ,[organizationName] *
+      ,[brandName]
+      ,[companyCnpj] *
+      ,[type]
+      ,[compeCode]
+      ,[branchCode]
+      ,[number]
+      ,[checkDigit]
+  FROM [repactua].[dbo].[01-accounts-accounts]
+
+#############
+
+SELECT TOP (1000) [creditCardAccountId]
+      ,[customerId]
+      ,[organizationId]
+      ,[organizationName]
+      ,[name] *
+      ,[productType] *
+      ,[creditCardNetwork]
+  FROM [repactua].[dbo].[01-credit-cards]
+
+#############
+(nessa tabela, nenhuma variavel achei interessante)
+SELECT TOP (1000) [customerId]
+      ,[organizationId]
+      ,[productsServicesType]
+      ,[productsServicesTypeAdditionalInfo]
+      ,[accounts]
+  FROM [repactua].[dbo].[01-financial-relation]
+
+#############
+
+SELECT TOP (1000) [contractId]
+      ,[customerId]
+      ,[organizationId]
+      ,[organizationName]
+      ,[brandName]
+      ,[companyCnpj]
+      ,[productType] *
+      ,[ipocCode]
+  FROM [repactua].[dbo].[01-financings-contracts]
+
+#############
+
+SELECT TOP (1000) [contractId]
+      ,[customerId]
+      ,[organizationId]
+      ,[organizationName]
+      ,[brandName]
+      ,[companyCnpj]
+      ,[productType]
+      ,[productSubType] *
+      ,[ipocCode]
+  FROM [repactua].[dbo].[01-loans-contracts]
+
+#############
+
+SELECT TOP (1000) [personalId]
+      ,[organizationId]
+      ,[customerId]
+      ,[brandName]
+      ,[civilName]
+      ,[socialName]
+      ,[birthDate] *
+      ,[maritalStatusCode] *
+      ,[sex] *
+      ,[companyCnpj]
+      ,[documents]
+      ,[otherDocuments]
+      ,[hasBrazilianNationality]
+      ,[nationality]
+      ,[filiation]
+      ,[contacts]
+  FROM [repactua].[dbo].[01-personal-identification]
+
+#############
+(rever depois essa tabela com mais atencao) ***
+SELECT TOP (1000) [customerId]
+      ,[organizationId]
+      ,[brandName]
+      ,[companyCnpj]
+      ,[occupationCode]
+      ,[occupationDescription]
+      ,[informedIncome]* (separar dados)
+      ,[informedPatrimony]* (separar dados)
+  FROM [repactua].[dbo].[01-personal-qualification]
+
+#############
+(tabela com informacoes redundantes)
+SELECT TOP (1000) [accountId]
+      ,[customerId]
+      ,[organizationId]
+      ,[organizationName]
+      ,[compeCode]
+      ,[branchCode]
+      ,[number]
+      ,[checkDigit]
+      ,[type]
+      ,[subtype]
+      ,[currency]
+  FROM [repactua].[dbo].[02-accounts-details]
+
+#############
+(tabela com informacoes redundantes)
+SELECT TOP (1000) [creditCardAccountId]
+      ,[customerId]
+      ,[organizationId]
+      ,[organizationName]
+      ,[name]
+      ,[productType]
+      ,[creditCardNetwork]
+      ,[paymentMethod]
+  FROM [repactua].[dbo].[02-credit-cards-details]
+
+#############
+(rever depois essa tabela com mais atencao) ***
+SELECT TOP (1000) [contractId]
+      ,[contractNumber]
+      ,[customerId]
+      ,[organizationId]
+      ,[organizationName]
+      ,[ipocCode]
+      ,[productName]
+      ,[productType]
+      ,[contractDate]
+      ,[settlementDate]
+      ,[contractAmount]
+      ,[currency]
+      ,[dueDate]
+      ,[instalmentPeriodicity]
+      ,[instalmentPeriodicityAdditionalInfo]
+      ,[firstInstalmentDueDate]
+      ,[CET]
+      ,[amortizationScheduled]
+      ,[amortizationScheduledAdditionalInfo]
+      ,[interestRates]* (separar taxa fixa)
+      ,[contractedFees]
+      ,[contractedFinanceCharges]
+  FROM [repactua].[dbo].[02-financings-details]
+
+#############
+(rever depois essa tabela com mais atencao) ***
+SELECT TOP (1000) [contractId]
+      ,[contractNumber]
+      ,[customerId]
+      ,[organizationId]
+      ,[organizationName]
+      ,[ipocCode]
+      ,[productName]
+      ,[productType]
+      ,[productSubType]
+      ,[contractDate]
+      ,[settlementDate]
+      ,[contractAmount]
+      ,[currency]
+      ,[dueDate]
+      ,[instalmentPeriodicity]
+      ,[instalmentPeriodicityAdditionalInfo]
+      ,[firstInstalmentDueDate]
+      ,[CET]*
+      ,[amortizationScheduled]
+      ,[amortizationScheduledAdditionalInfo]
+      ,[cnpjConsignee]
+      ,[interestRates]* (separar taxa fixa)
+      ,[contractedFees]
+      ,[contractedFinanceCharges]
+  FROM [repactua].[dbo].[02-loans-details]
+
+#############
+
+SELECT TOP (1000) [accountId]
+      ,[customerId]
+      ,[organizationId]
+      ,[organizationName]
+      ,[availableAmount]
+      ,[availableAmountCurrency]
+      ,[blockedAmount]
+      ,[blockedAmountCurrency]
+      ,[automaticallyInvestedAmount]
+      ,[automaticallyInvestedAmountCurrency]
+  FROM [repactua].[dbo].[03-accounts-balances]
+
+#############
+
+SELECT TOP (1000) [creditCardAccountId]
+      ,[customerId]
+      ,[organizationId]
+      ,[organizationName]
+      ,[creditLineLimitType]
+      ,[consolidationType]
+      ,[identificationNumber]
+      ,[isLimitFlexible]
+      ,[limitAmountCurrency]
+      ,[limitAmount] *
+      ,[usedAmountCurrency]
+      ,[usedAmount] *
+      ,[availableAmountCurrency]
+      ,[availableAmount] *
+  FROM [repactua].[dbo].[03-credit-cards-limits]
+
+#############
+
+SELECT TOP (1000) [contractId]
+      ,[customerId]
+      ,[organizationId]
+      ,[organizationName]
+      ,[currency]
+      ,[warrantyType] *
+      ,[warrantySubType] *
+      ,[warrantyAmount] *
+  FROM [repactua].[dbo].[03-financings-warranties]
+
+#############
+
+SELECT TOP (1000) [contractId]
+      ,[customerId]
+      ,[organizationId]
+      ,[organizationName]
+      ,[currency]
+      ,[warrantyType] *
+      ,[warrantySubType] *
+      ,[warrantyAmount] *
+  FROM [repactua].[dbo].[03-loans-warranties]
+
+
+#############
+(rever depois essa tabela com mais atencao) ***
+SELECT TOP (1000) [accountId]
+      ,[customerId]
+      ,[organizationId]
+      ,[organizationName]
+      ,[transactionId]
+      ,[completedAuthorisedPaymentType]
+      ,[creditDebitType]
+      ,[transactionName]
+      ,[type] * (separar BOLETO)
+      ,[amount] *MEDIA
+      ,[transactionCurrency]
+      ,[transactionDate]
+      ,[partieCnpjCpf]
+      ,[partiePersonType]
+      ,[partieCompeCode]
+      ,[partieBranchCode]
+      ,[partieNumber]
+      ,[partieCheckDigit]
+  FROM [repactua].[dbo].[04-accounts-transactions]
+
+#############
+(rever depois essa tabela com mais atencao) ***
+SELECT TOP (1000) [creditCardAccountId]
+      ,[customerId]
+      ,[organizationId]
+      ,[organizationName]
+      ,[transactionId]
+      ,[identificationNumber]
+      ,[transactionName]
+      ,[creditDebitType]
+      ,[transactionType]
+      ,[paymentType]
+      ,[feeType]
+      ,[chargeIdentificator]
+      ,[chargeNumber]
+      ,[brazilianAmount] * SOMA
+      ,[amount] 
+      ,[currency]
+      ,[transactionDate]
+      ,[billPostDate]
+      ,[payeeMCC]
+      ,[billId]
+  FROM [repactua].[dbo].[04-credit-cards-transactions]
+
+#############
+(nessa tabela, nenhuma variavel achei interessante)
+SELECT TOP (1000) [contractId]
+      ,[customerId]
+      ,[organizationId]
+      ,[organizationName]
+      ,[paidInstalments]
+      ,[contractOutstandingBalance]
+      ,[releases]
+  FROM [repactua].[dbo].[04-financings-payments]
+
+#############
+(nessa tabela, nenhuma variavel achei interessante)
+SELECT TOP (1000) [contractId]
+      ,[customerId]
+      ,[organizationId]
+      ,[organizationName]
+      ,[paidInstalments]
+      ,[contractOutstandingBalance]
+      ,[releases]
+  FROM [repactua].[dbo].[04-loans-payments]
+
+#############
+(sem colunas relevantes com dados preenchidos)
+SELECT TOP (1000) [accountId]
+      ,[customerId]
+      ,[organizationId]
+      ,[organizationName]
+      ,[overdraftContractedLimit]
+      ,[overdraftContractedLimitCurrency]
+      ,[overdraftUsedLimit]
+      ,[overdraftUsedLimitCurrency]
+      ,[unarrangedOverdraftAmount]
+      ,[unarrangedOverdraftAmountCurrency]
+  FROM [repactua].[dbo].[05-accounts-overdraft-limits]
+
+#############
+(tabela com informacoes redundantes)
+SELECT TOP (1000) [creditCardAccountId]
+      ,[customerId]
+      ,[organizationId]
+      ,[organizationName]
+      ,[billId]
+      ,[dueDate]
+      ,[billTotalAmount]
+      ,[billTotalAmountCurrency]
+      ,[billMinimumAmount]
+      ,[billMinimumAmountCurrency]
+      ,[isInstalment]
+      ,[financeCharges]
+      ,[payments]
+  FROM [repactua].[dbo].[05-credit-cards-bills]
+
+#############
+
+SELECT TOP (1000) [contractId]
+      ,[customerId]
+      ,[organizationId]
+      ,[organizationName]
+      ,[typeNumberOfInstalments]
+      ,[totalNumberOfInstalments] *
+      ,[typeContractRemaining]
+      ,[contractRemainingNumber] *
+      ,[paidInstalments] *
+      ,[dueInstalments] *
+      ,[pastDueInstalments]
+      ,[balloonPayments]
+  FROM [repactua].[dbo].[05-financings-scheduled-instalments]
+
+#############
+
+SELECT TOP (1000) [contractId]
+      ,[customerId]
+      ,[organizationId]
+      ,[organizationName]
+      ,[typeNumberOfInstalments]
+      ,[totalNumberOfInstalments] *
+      ,[typeContractRemaining]
+      ,[contractRemainingNumber] *
+      ,[paidInstalments] *
+      ,[dueInstalments] *
+      ,[pastDueInstalments]
+      ,[balloonPayments]
+  FROM [repactua].[dbo].[05-loans-scheduled-instalments]
+
+#############
+(tabela com informacoes redundantes)
+SELECT TOP (1000) [creditCardAccountId]
+      ,[customerId]
+      ,[organizationId]
+      ,[organizationName]
+      ,[transactionId]
+      ,[identificationNumber]
+      ,[transactionName]
+      ,[creditDebitType]
+      ,[transactionType]
+      ,[paymentType]
+      ,[feeType]
+      ,[chargeIdentificator]
+      ,[chargeNumber]
+      ,[brazilianAmount]
+      ,[amount]
+      ,[currency]
+      ,[transactionDate]
+      ,[billPostDate]
+      ,[payeeMCC]
+      ,[billId]
+  FROM [repactua].[dbo].[06-credit-cards-bills-transactions]
+
+#############
+(tabela com informacoes redundantes)
+SELECT TOP (1000) [column1]
+      ,[column2]
+      ,[column3]
+      ,[column4]
+      ,[column5]
+  FROM [repactua].[dbo].[data_clientes]
+
+
+
+
+
